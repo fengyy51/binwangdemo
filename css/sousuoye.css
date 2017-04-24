@@ -1,0 +1,41 @@
+.sousuolan .pure-form input{
+	background: url('../resource/fonts/sousuo/select.png')no-repeat 8px center;
+	width: 88%;
+	margin: 5px 6%;
+	padding-left: 45px;
+
+}
+.kuaijiesousuo{
+	width: 100%;	
+}
+.item-list{
+	width: 88%;
+	/* height:35px;  */
+	overflow-x: scroll;
+	overflow-y: hidden;	
+	position: relative;
+	height: 60px;
+}
+.item-container{
+	width: 600px;
+	position: relative;		
+	list-style-type: none;
+}
+.item{
+	border: 1px solid #C9C9C9;
+	border-radius: 10px;
+	background: #E4E4E4;
+	width: 50px;
+	display: inline-block;
+	padding: 5px 0.5%;
+	text-align: center;
+	margin: 3px 3px 0;
+}
+.sheshi{
+	width: 88%;
+	height: 40px;
+	margin-left: 10%;
+}
+.sheshi img{
+	margin: 3px 3%;
+}
