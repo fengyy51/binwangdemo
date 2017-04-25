@@ -1,16 +1,15 @@
 .sousuolan .pure-form input{
 	background: url('../resource/fonts/sousuo/select.png')no-repeat 8px center;
-	width: 88%;
-	margin: 5px 6%;
+	width: 84%;
+	margin: 5px 8%;
 	padding-left: 45px;
-
+/* 	border-radius: 20px; */
 }
 .kuaijiesousuo{
 	width: 100%;	
 }
 .item-list{
-	width: 88%;
-	/* height:35px;  */
+	width: 88%;	
 	overflow-x: scroll;
 	overflow-y: hidden;	
 	position: relative;
@@ -25,11 +24,12 @@
 	border: 1px solid #C9C9C9;
 	border-radius: 10px;
 	background: #E4E4E4;
-	width: 50px;
+	width: 55px;
 	display: inline-block;
 	padding: 5px 0.5%;
 	text-align: center;
 	margin: 3px 3px 0;
+	color: #434343;
 }
 .sheshi{
 	width: 88%;
@@ -38,4 +38,35 @@
 }
 .sheshi img{
 	margin: 3px 3%;
+}
+.fenlei-item-floor{
+	
+	font-size: 1.1rem;
+	width: 8%;
+	float: left;
+	clear: right;
+	margin-left: 3%;
+	/*  5px 2% 3px 2% ; */
+}
+.fenlei-item-text-list{
+	/* width: 82%; */
+	/* margin-right:15%; */
+	/* margin-left: 3%; */
+	
+}
+.fenlei-item-text{
+	color: #666666;
+	font-size: 0.9rem;
+	padding-right: 3%;
+	padding-left: 3%;	
+	border-right: 1px solid #D7D2D2;	
+}
+.fenlei-item-text:first-child{
+	border-left: 1px solid #D7D2D2; 
+}
+.fenlei-item-text:hover{
+	color: #FA505D;
+}
+.dingwei{
+	color: #FF0000;
 }

@@ -7,13 +7,14 @@ html{
 	width: 100%;
 	height: 100%;
 	background:url("../resource/img/白色背景.jpg")no-repeat ; 
-	background-size: cover;
+	/* background-size: cover; */
 	font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
 div.topest{
 	
 	width: 100%;
-	height: 42px;
+	height: 40px;
 	border: 1px solid #000000;
 	color: #ffffff;
 	background-color: #000000;
@@ -31,7 +32,7 @@ div.topest span.left{
 	height: 30px;
 }
 div.topest span.center{
-	margin: 2% 12.5%;
+	margin: 0 12.5% ;
 	font-size: 1.2rem;
 	text-align: center;
 }
@@ -49,4 +50,22 @@ div.topest span.right{
 .title-text{
 	color: #FF6666;
 	margin: 5px 0 3px 7%;
+}
+.mapshow img{
+	width: 76%;
+	margin: 5px 12% 0;
+	
+}
+.red{
+	color:#FF0000;
+}
+.dingwei-text{
+	color:#0099FF;
+	margin-left: 15%;
+	font-size: 0.9rem;
+}
+.dingwei-text img{
+	width: 20px;
+	height: 20px;
+	margin-right: 2%;
 }
