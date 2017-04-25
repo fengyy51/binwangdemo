@@ -2,6 +2,7 @@ html,body{
 	margin: 0;
 	padding: 0;
 	letter-spacing: normal;
+	overflow-x: hidden;
 }
 html{
 	width: 100%;
@@ -9,9 +10,11 @@ html{
 	background:url("../resource/img/白色背景.jpg")no-repeat ; 
 	/* background-size: cover; */
 	font-family: "Microsoft Yahei","Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #666666;
+	
 }
-
-div.topest{
+/* 微信顶部 */
+/* div.topest{
 	
 	width: 100%;
 	height: 40px;
@@ -41,31 +44,55 @@ div.topest span.right{
 	width: 32px;
 	vertical-align: middle;
 	margin-right: 3%;
-}
+} */
+/* 每部分下面均有横线分隔 */
 .border-line{
 	padding-top:3px; 
 	padding-bottom: 3px;
 	border-bottom: 1px solid #E4E4E4;
 }
+/* 各模块顶部介绍信息 */
 .title-text{
 	color: #FF6666;
 	margin: 5px 0 3px 7%;
 }
 .mapshow img{
 	width: 76%;
+	height:200px; 
 	margin: 5px 12% 0;
 	
 }
 .red{
 	color:#FF0000;
 }
+/* 您的位置 这几个字的格式 */
 .dingwei-text{
 	color:#0099FF;
 	margin-left: 15%;
 	font-size: 0.9rem;
 }
+/* 您的位置图标 的格式 */
 .dingwei-text img{
 	width: 20px;
 	height: 20px;
 	margin-right: 2%;
+}
+/*  */
+.head{
+	
+	/* border: 1px solid #E3E5E6; */
+	height: 34px;
+	margin: 2px 0 2px 0;
+}
+.left{  	
+ 	float: left;
+ 	margin:  5px 0 3px 7%;
+ 	
+}
+.right{
+	/* position: absolute;
+	right: 20px; */
+ 	float: right;
+ 	width: 60px;
+ 	/* clear:left; */
 }
