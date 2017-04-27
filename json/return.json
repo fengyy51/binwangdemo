@@ -15,6 +15,8 @@
             { "tupian": "../resource/img/shangpuone.jpg", "decoration": "新泰玩具"},
             { "tupian": "../resource/img/shangputwo.jpg", "decoration": "宏展玩具"},
             { "tupian": "../resource/img/shangpuone.jpg", "decoration": "义乌魔佩工艺品厂"}
-        ]
+        ],
+        "shangpu":{"mingcheng":"新泰玩具","yewu":"毛绒玩具，玩偶公仔，家居用品，母婴用品",
+        "name":"虞正泰","telephone":"18857917296","weixin":"53478359","weizhi":"../resource/img/室内地图.png"}
 	}
 }

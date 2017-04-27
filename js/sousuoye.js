@@ -9,10 +9,12 @@ function contact(){
 		type:"GET",
 		dataType:"json",
 		success:function(data){
+			// 判断输入文字进行跳转
+			sousuoaction();
 			// 快捷搜索
 			var dataReceive=data.data.sousuo;
 			makeKuaiJieSouSuo(dataReceive);			
-			sousuoaction();
+			
 			// 搜索地图显示
 			var sousuomap=data.data.sousuomap;
 			makeSouSuoMap(sousuomap);
@@ -28,6 +30,38 @@ function contact(){
 	}
 	);
 }
+function sousuoaction(){
+	var sousuoinput=$(".pure-input-rounded");
+	var sousuobutton=$('a.button-sousuo');
+	var form=$(".pure-form");
+	// console.log(sousuoinput.value)
+	sousuobutton.click(function(){
+		window.localStorage.setItem("sousuotext",sousuoinput.val());
+		var value=sousuoinput.val();
+		if(value!=null&&value!=""){
+			sousuobutton.attr("href","../page/sousuoresult.html");
+			// var strHtml='';
+			// form.html(strHtml);
+			//  strHtml='<input type="text" id="sousuoinput" class="pure-input-rounded" placeholder="  商铺,商品,基础设施搜索">'
+			// +'<a class=" pure-button button-sousuo" href="">搜索</a>';
+			console.log(value);
+			// form.html(strHtml);
+		}
+	});	
+	
+	var valuestorage=window.localStorage.getItem("sousuotext");
+	console.log(valuestorage);
+		// var strHtml='<input type="text" id="sousuoinput" class="pure-input-rounded" placeholder="  商铺,商品,基础设施搜索">'
+		// +'<a class=" pure-button button-sousuo" href="#####" onclick="javascript:return false;">搜索</a>';
+		// console.log(value);
+		// form.html(strHtml);
+		
+		// else{
+		
+		// }
+
+	
+}
 function makeKuaiJieSouSuo(dataReceive){
 	var strHtml="";
 	for(var i=0;i<dataReceive.length;i++){
@@ -41,13 +75,7 @@ function makeKuaiJieSouSuo(dataReceive){
 	var $kuaijie=$('.kuaijiesousuo');
 	$kuaijie.html(Html);	
 }
-function sousuoaction(){
-	var $item_list=$(".item-list")[0];
-	var $item_container=$(".item-container")[0];
-	$item_list.addEventListener("touch",function(){
-		$item_container.scrollLeft-10;
-	})
-}
+
 function makeSouSuoMap(sousuomap){
 	var strHtml='<div class="title-text">地图导览</div>'
 	+'<div class="dingwei"><span class="dingwei-text">您的位置: '

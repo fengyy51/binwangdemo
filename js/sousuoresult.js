@@ -40,7 +40,7 @@ function makeResultList(resultshangpu){
 	// console.log(resultshangpu.length);
 	for(var i=0;i<resultshangpu.length;i++){
 		strHtml=strHtml+'<div class="item border-line"><div class="tupian"><img src=' + resultshangpu[i].tupian + '></div><div class="content"><p class="decoration">' +
-        resultshangpu[i].decoration + '</p><input type="button" name="chakan" value="查看"></div></div>';
+        resultshangpu[i].decoration + '</p><a class="pure-button button-chakan " href="../page/shangpuye.html">查看</a></div></div>';
 	}	
 	$('div.sousuo-result .body').html(strHtml);
 }

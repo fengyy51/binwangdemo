@@ -1,10 +1,29 @@
+.sousuolan .pure-form {
+	margin-bottom: 1.5%;
+}
 .sousuolan .pure-form input{
 	background: url('../resource/fonts/sousuo/select.png')no-repeat 8px center;
-	width: 84%;
-	margin: 5px 8%;
+	width: 65%;
+	float: left;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 8%;
 	padding-left: 45px;
 /* 	border-radius: 20px; */
 }
+
+.sousuolan .pure-form a.button-sousuo {
+	background-color: #00CCFF;
+	color: white;
+	/* height: 30px; */
+	border-radius: 7px;
+	margin-top: 5px;
+	/* margin-bottom: 5px; */
+	border-color: #FFFFFF;
+	margin-left: 2px;
+
+}
+
 .kuaijiesousuo{
 	width: 100%;	
 }
@@ -70,7 +89,4 @@
 .dingwei{
 	color: #FF0000;
 }
-a:link { text-decoration: none;color: blue} 
-a:active { text-decoration:blink} 
-a:hover { text-decoration:underline;color: red} 
-a:visited { text-decoration: none;} 
+

@@ -1,0 +1,57 @@
+.left-duiqi {
+	/* color: #000000; */
+	margin-left: 12%;
+}
+.mingcheng .body h2{
+	text-align: center;
+	margin-top: 0;
+	margin-bottom: 2%;
+}
+.yewu .body p{
+	margin-bottom: 2%;
+	width: 82%;
+}
+.lianxi .body{
+	margin-bottom: 2%;
+}
+
+.lianxi .body .telephone{
+	color:#0099FF;
+	margin-left: 3.5%;
+}
+.lianxi .body .weixin{
+	color:#0099FF;
+	margin-left: 3.5%;
+}
+.lianxi .body img{
+	width: 25px;
+	height: 25px;
+	margin-right: 1%;
+}
+.pingjia .body{
+	color:#0099FF;
+}
+.pingjia {
+	height: 80px;
+}
+.pingjia .body img{
+	width: 25px;
+	height: 25px;
+	/* margin-left: 12%; */
+}
+.pingjia .body .chaping{
+	margin-left:15%;
+}
+.shoucang{
+	height: 80px;
+}
+a.button-tiaozhuan{
+	color: white;
+    border-radius: 8px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background-color: rgb(236, 108, 0);
+    width: 88%;
+    margin: 5px 6% 5px 6%;
+    padding: 3% ;
+    font-size: 1.2rem;
+}
