@@ -1,4 +1,4 @@
-var i=1;//控制点赞效果
+var i=1;//控制点赞效果  i,j%2 -1是真正的效果图片索引  因为每次最后都进行了+1
 var j=1;//控制差评效果
 $(document).ready(function(){
 	contact();
@@ -78,7 +78,6 @@ function makePingJia(){
 			
 			
 			chaping.attr("src","../resource/fonts/pingjia/chaping.png");
-			console.log(chaping.attr('src'));
 			chaping_num.html('');
 			j=1;
 			dianzan_num.append('+1');
@@ -96,7 +95,6 @@ function makePingJia(){
 		{
 			
 			dianzan.attr('src','../resource/fonts/pingjia/dianzan.png');
-			console.log(dianzan.attr('src'));
 			dianzan_num.html('');
 			i=1;
 			chaping_num.append('-1');
