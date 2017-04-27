@@ -40,7 +40,7 @@
 	/* margin-left: 12%; */
 }
 .pingjia .body .chaping{
-	margin-left:15%;
+	margin-left:5%;
 }
 .shoucang{
 	height: 80px;
@@ -54,4 +54,10 @@ a.button-tiaozhuan{
     margin: 5px 6% 5px 6%;
     padding: 3% ;
     font-size: 1.2rem;
+}
+.pingjia .dianzan .num{
+	color: #E30322;
+}
+.pingjia .chaping .num{
+	color: #E30322;
 }

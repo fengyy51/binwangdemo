@@ -1,3 +1,5 @@
+var i=1;//控制点赞效果
+var j=1;//控制差评效果
 $(document).ready(function(){
 	contact();
 	
@@ -23,8 +25,11 @@ function contact(){
 			makeLianXi(name,telephone,weixin);
 			// 商铺位置
 			var weizhi=shangpu.weizhi;
-			console.log(weizhi);
+			// console.log(weizhi);
 			makeWeiZhi(weizhi);
+			// 评价
+			makePingJia();
+		
 			
 		},
 		error:function(error){
@@ -55,4 +60,49 @@ function makeWeiZhi(weizhi){
 	var $weizhi=$('.weizhi .body');
 	var strHtml='<div class="mapshow"><img src='+weizhi+'></div>';
 	$weizhi.html(strHtml);
+}
+function makePingJia(){
+	
+	// 点赞效果 点击后进行颜色数字切换
+	var dianzan=$('.pingjia .dianzan img');
+	var dianzan_num=$('.pingjia .dianzan .num');
+	var img_dianzan=["../resource/fonts/pingjia/dianzan.png","../resource/fonts/pingjia/dianzanhong.png"];
+	var chaping=$('.pingjia .chaping img');
+	var chaping_num=$('.pingjia .chaping .num');
+	var img_chaping=["../resource/fonts/pingjia/chaping.png","../resource/fonts/pingjia/chapinghong.png"];
+	// chaping.attr("src","../resource/fonts/pingjia/chapinghong.png");
+	dianzan.click(function(){
+		this.src=img_dianzan[i%2];
+		if(i%2==1)
+		{
+			
+			
+			chaping.attr("src","../resource/fonts/pingjia/chaping.png");
+			console.log(chaping.attr('src'));
+			chaping_num.html('');
+			j=1;
+			dianzan_num.append('+1');
+		}
+		
+		else
+		dianzan_num.html('');
+		i++;
+	});
+	// 差评效果 点击后进行颜色数字切换
+	
+	chaping.click(function(){
+		this.src=img_chaping[j%2];
+		if(j%2==1)
+		{
+			
+			dianzan.attr('src','../resource/fonts/pingjia/dianzan.png');
+			console.log(dianzan.attr('src'));
+			dianzan_num.html('');
+			i=1;
+			chaping_num.append('-1');
+		}		
+		else
+		chaping_num.html('');
+		j++;
+	});
 }

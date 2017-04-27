@@ -38,7 +38,7 @@ function sousuoaction(){
 	sousuobutton.click(function(){
 		window.localStorage.setItem("sousuotext",sousuoinput.val());
 		var value=sousuoinput.val();
-		if(value!="undefined"&&value!=""){
+		if(value!="undefined"&&value!=null&&value!=""){
 			window.location.href="../page/sousuoresult.html";
 			// var strHtml='';
 			// form.html(strHtml);
