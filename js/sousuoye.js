@@ -38,8 +38,8 @@ function sousuoaction(){
 	sousuobutton.click(function(){
 		window.localStorage.setItem("sousuotext",sousuoinput.val());
 		var value=sousuoinput.val();
-		if(value!=null&&value!=""){
-			sousuobutton.attr("href","../page/sousuoresult.html");
+		if(value!="undefined"&&value!=""){
+			window.location.href="../page/sousuoresult.html";
 			// var strHtml='';
 			// form.html(strHtml);
 			//  strHtml='<input type="text" id="sousuoinput" class="pure-input-rounded" placeholder="  商铺,商品,基础设施搜索">'
