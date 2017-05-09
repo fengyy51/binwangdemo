@@ -56,19 +56,51 @@ div.topest span.right{
 	color: #FF6666;
 	margin: 5px 0 3px 7%;
 }
-.mapshow img{
+/* .mapshow img {
 	width: 76%;
 	height:200px; 
 	margin: 5px 12% 0;
 	
+} */
+.ditudaolan{
+	position: relative;
+	width: 100%;
+	height: 45px;	
+	z-index: 20;
+}
+.mapshow{
+	width: 76%;
+	height:200px; 
+	margin: 5px 12% 0;
+}
+#out-frame{
+	position: relative;
+	width: 76%;
+	height:200px; 
+	margin: 5px 12% 0;
+	overflow: hidden;
+ }
+ .button-dingwei{
+	background-color: #00CCFF;
+	color: white;
+	/* height: 30px; */
+	border-radius: 7px;
+	margin-top: 3px;
+	/* margin-bottom: 5px; */
+	border-color: #FFFFFF;
+	margin-left: 1em;
+	padding:0.3rem 0.6rem;
 }
 .red{
 	color:#FF0000;
 }
 /* 您的位置 这几个字的格式 */
+.dingwei{
+
+}
 .dingwei-text{
 	color:#0099FF;
-	margin-left: 15%;
+	margin-left: 5%;
 	font-size: 0.9rem;
 }
 /* 您的位置图标 的格式 */

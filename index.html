@@ -4,6 +4,12 @@
 	<meta charset="UTF-8">
 	<title>义乌商贸城一区</title>
 	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,max-scale=1,min-scale=1,use-scalable=no">
+	<style type="text/css">
+		
+		@font-face {font-family : 'VMapPublic';src : url(./VMapPublic.ttf);}
+		.mapshow{ font-family: 'VMapPublic',serif; 
+		} /*必须加上这句！否则在初始化地图时，公共设施字体无法加载出来
+	</style>
 	<link rel="stylesheet" type="text/css" href="css/pure.css">
 	<link rel="stylesheet" type="text/css" href="css/quanju.css">
 	<link rel="stylesheet" type="text/css" href="css/sousuoye.css">
@@ -24,14 +30,27 @@
 	<div class="kuaijiesousuo border-line">
 		
 	</div>
-	<div class="ditudaolan border-line">
-		
-
+	<div class="border-line">
+		<div class="ditudaolan ">
+		<div class="title-text">地图导览<button id="dingwei" class="pure-button button-dingwei">定位</button>
+		<span class="dingwei" ><span class="dingwei-text" >您的位置:<img src="../resource/fonts/dingwei/dingweilogo.png"></span></span></div>
 	</div>
+	<div id="out-frame" ><div class="mapshow" id="mapshow"></div></div>
+	</div>
+	
 	<div class="fenleisuoyin ">		
 	
 	</div>
+	<!-- <script type="text/javascript" src="js/lib/zepto.js"></script> -->
 	<script type="text/javascript" src="js/lib/zepto.js"></script>
 	<script type="text/javascript" src="js/sousuoye.js"></script>
+	
+	<script type="text/javascript" src="js/lib/SDKjs-release/blockUI-c22b98bace.js"></script>
+	<script type="text/javascript" src="js/lib/SDKjs-release/hammer-58b95c1ece.js"></script>
+	<script type="text/javascript" src="js/lib/SDKjs-release/slave-4070808c1b.js"></script>
+	<script type="text/javascript" src="js/lib/SDKjs-release/VMap-d35c80c1e2.js"></script>
+	
+	
+	
 </body>
 </html>

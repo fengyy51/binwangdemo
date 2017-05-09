@@ -1,6 +1,7 @@
 $(document).ready(function(){
 	contact();
-	
+	// 搜索地图显示
+	makeMap();
 });
 function contact(){
 	$.ajax(
@@ -15,9 +16,9 @@ function contact(){
 			var dataReceive=data.data.sousuo;
 			makeKuaiJieSouSuo(dataReceive);			
 			
-			// 搜索地图显示
-			var sousuomap=data.data.sousuomap;
-			makeSouSuoMap(sousuomap);
+			
+			// var sousuomap=data.data.sousuomap;
+			// makeSouSuoMap(sousuomap);
 			// 分类索引
 			var fenlei=data.data.fenlei;
 			makeFenLei(fenlei);
@@ -50,7 +51,7 @@ function sousuoaction(){
 	});	
 	
 	var valuestorage=window.localStorage.getItem("sousuotext");
-	console.log(valuestorage);
+	// console.log(valuestorage);
 		// var strHtml='<input type="text" id="sousuoinput" class="pure-input-rounded" placeholder="  商铺,商品,基础设施搜索">'
 		// +'<a class=" pure-button button-sousuo" href="#####" onclick="javascript:return false;">搜索</a>';
 		// console.log(value);
@@ -84,6 +85,30 @@ function makeSouSuoMap(sousuomap){
 	+'<div class="mapshow"><img src='+sousuomap[1]+'></div>'
 	var ditudaolan=$('.ditudaolan');
 	ditudaolan.html(strHtml);
+}
+function makeMap(){
+	var mapDiv=document.querySelector("#mapshow");
+	var options={fontColor:"blue",publicColor:"green"};
+	var map = new Vmap(mapDiv,"E9F6A2DE-EADC-45AF-A42E-C7458A401339","Floor3",options);
+	map.setZoomScale(2);
+	var p1 = new VPoint(72.568,13.089,"Floor3");
+	var p2 = new VPoint(46.485,23.098,"Floor3");
+	var p3 = new VPoint(48.699,42.443,"Floor3");
+	var dingwei=document.querySelector("#dingwei");
+	dingwei.onclick=function(){
+		//定义三个点对象的实例
+	
+	//定义marker
+	var marker1 = new VMarker(p1,"../resource/img/LocatingPoint.gif");
+	var marker2 = new VMarker(p2,1);
+	var marker3 = new VMarker(p3,2);
+			
+	//加载到地图浮层
+	map.addOverlay(marker1);
+	map.addOverlay(marker2);
+	map.addOverlay(marker3);
+};
+	
 }
 // 分类索引
 function makeFenLei(fenlei){

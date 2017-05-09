@@ -2,7 +2,8 @@ var i=1;//控制点赞效果  i,j%2 -1是真正的效果图片索引  因为每�
 var j=1;//控制差评效果
 $(document).ready(function(){
 	contact();
-	
+	makeMap();
+	// console.log(document.getElementsByTagName("*"));
 });
 function contact(){
 	$.ajax(
@@ -24,9 +25,9 @@ function contact(){
 			var weixin=shangpu.weixin;
 			makeLianXi(name,telephone,weixin);
 			// 商铺位置
-			var weizhi=shangpu.weizhi;
-			// console.log(weizhi);
-			makeWeiZhi(weizhi);
+			// var weizhi=shangpu.weizhi;
+			// // console.log(weizhi);
+			// makeWeiZhi(weizhi);
 			// 评价
 			makePingJia();
 		
@@ -60,6 +61,30 @@ function makeWeiZhi(weizhi){
 	var $weizhi=$('.weizhi .body');
 	var strHtml='<div class="mapshow"><img src='+weizhi+'></div>';
 	$weizhi.html(strHtml);
+}
+function makeMap(){
+	var mapDiv=document.querySelector("#mapshow");
+	var options={fontColor:"blue",publicColor:"green"};
+	var map = new Vmap(mapDiv,"E9F6A2DE-EADC-45AF-A42E-C7458A401339","Floor3",options);
+	map.setZoomScale(2);
+	var p1 = new VPoint(72.568,13.089,"Floor3");
+	var p2 = new VPoint(46.485,23.098,"Floor3");
+	var p3 = new VPoint(48.699,42.443,"Floor3");
+	var dingwei=document.querySelector("#dingwei");
+	dingwei.onclick=function(){
+		//定义三个点对象的实例
+	
+	//定义marker
+	var marker1 = new VMarker(p1,"../resource/img/LocatingPoint.gif");
+	var marker2 = new VMarker(p2,"../resource/img/marker.png");
+	var marker3 = new VMarker(p3,"../resource/img/tap.png");
+			
+	//加载到地图浮层
+	map.addOverlay(marker1);
+	map.addOverlay(marker2);
+	map.addOverlay(marker3);
+};
+	
 }
 function makePingJia(){
 	
