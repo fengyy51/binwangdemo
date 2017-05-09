@@ -7,7 +7,7 @@
 	<style type="text/css">
 		
 		@font-face {font-family : 'VMapPublic';src : url(./VMapPublic.ttf);}
-		.mapshow{ font-family: 'VMapPublic',serif; 
+		#mapshow{ font-family: 'VMapPublic',serif; 
 		} /*必须加上这句！否则在初始化地图时，公共设施字体无法加载出来
 	</style>
 	<link rel="stylesheet" type="text/css" href="css/pure.css">
@@ -35,7 +35,10 @@
 		<div class="title-text">地图导览<button id="dingwei" class="pure-button button-dingwei">定位</button>
 		<span class="dingwei" ><span class="dingwei-text" >您的位置:<img src="../resource/fonts/dingwei/dingweilogo.png"></span></span></div>
 	</div>
-	<div id="out-frame" ><div class="mapshow" id="mapshow"></div></div>
+	<div id="out-frame">
+		<div id="mapshow"></div>
+	</div>
+	
 	</div>
 	
 	<div class="fenleisuoyin ">		

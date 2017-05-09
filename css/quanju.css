@@ -68,18 +68,15 @@ div.topest span.right{
 	height: 45px;	
 	z-index: 20;
 }
-.mapshow{
-	width: 76%;
-	height:200px; 
-	margin: 5px 12% 0;
-}
+/* 地图显示 */
 #out-frame{
 	position: relative;
 	width: 76%;
-	height:200px; 
-	margin: 5px 12% 0;
+	height: 200px;
 	overflow: hidden;
- }
+	margin: 5px 12% 0;
+}
+
  .button-dingwei{
 	background-color: #00CCFF;
 	color: white;

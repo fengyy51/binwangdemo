@@ -64,9 +64,8 @@ function makeWeiZhi(weizhi){
 }
 function makeMap(){
 	var mapDiv=document.querySelector("#mapshow");
-	var options={fontColor:"blue",publicColor:"green"};
-	var map = new Vmap(mapDiv,"E9F6A2DE-EADC-45AF-A42E-C7458A401339","Floor3",options);
-	map.setZoomScale(2);
+	var options={movex:56.485,movey:42.098,fontColor:"blue",publicColor:"green"};
+	var map = new Vmap(mapDiv,"E9F6A2DE-EADC-45AF-A42E-C7458A401339","Floor3", options);
 	var p1 = new VPoint(72.568,13.089,"Floor3");
 	var p2 = new VPoint(46.485,23.098,"Floor3");
 	var p3 = new VPoint(48.699,42.443,"Floor3");
@@ -78,7 +77,8 @@ function makeMap(){
 	var marker1 = new VMarker(p1,"../resource/img/LocatingPoint.gif");
 	var marker2 = new VMarker(p2,"../resource/img/marker.png");
 	var marker3 = new VMarker(p3,"../resource/img/tap.png");
-			
+	options={movex:46.485,movey:42.098,fontColor:"blue",publicColor:"green"};
+	map = new Vmap(mapDiv,"E9F6A2DE-EADC-45AF-A42E-C7458A401339","Floor3", options);		
 	//加载到地图浮层
 	map.addOverlay(marker1);
 	map.addOverlay(marker2);
