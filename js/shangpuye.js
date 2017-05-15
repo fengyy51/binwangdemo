@@ -66,7 +66,7 @@ function makeWeiZhi(weizhi){
 }
 function makeMap(shangpumap){
 	var strHtml='<div class="title-text">地图导览'
-	+'<button id="dingwei" class="pure-button button-dingwei">定位</button>'
+	// +'<button id="dingwei" class="pure-button button-dingwei">定位</button>'
 	+'<span class="dingwei" ><span class="dingwei-text" >您的位置: <span class="red">'
 	+shangpumap.floorid+'</span><img src="../resource/fonts/dingwei/dingweilogo.png">'
 	+'</span></span></div>';
@@ -90,7 +90,7 @@ function makeMap(shangpumap){
 	var p2 = new VPoint(xpos,ypos,floor);
 	// var p3 = new VPoint(48.699,42.443,"Floor3");
 	var dingwei=document.querySelector("#dingwei");
-	dingwei.onclick=function(){
+	map.onFloorChange = function( ) {
 		//定义三个点对象的实例
 	
 	//定义marker

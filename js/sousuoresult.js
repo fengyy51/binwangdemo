@@ -16,7 +16,7 @@ function contact(){
 			makeResultList(resultshangpu);
 			// 搜索地图显示
 			var resultmap=data.data.resultmap;
-			makeMap(resultmap);
+			makeMap(resultmap,resultshangpu);
 		},
 		error:function(error){
 			console.log(error);
@@ -34,9 +34,9 @@ function makeResultMap(resultmap){
 	var ditudaolan=$('.ditudaolan');
 	ditudaolan.html(strHtml);
 }
-function makeMap(resultmap){
+function makeMap(resultmap,resultshangpu){
 	var strHtml='<div class="title-text">地图导览'
-	+'<button id="dingwei" class="pure-button button-dingwei">定位</button>'
+	// +'<button id="dingwei" class="pure-button button-dingwei">定位</button>'
 	+'<span class="dingwei" ><span class="dingwei-text" >您的位置: <span class="red">'
 	+resultmap.floorid+'</span><img src="../resource/fonts/dingwei/dingweilogo.png">'
 	+'</span></span></div>';
@@ -57,9 +57,9 @@ function makeMap(resultmap){
 	var p2 = new VPoint(xpos,ypos,floor);
 	// var p3 = new VPoint(48.699,42.443,"Floor3");
 	var dingwei=document.querySelector("#dingwei");
-	dingwei.onclick=function(){
+	// dingwei.onclick=function(){
 		//定义三个点对象的实例
-	
+	map.onFloorChange = function( ) {
 	//定义marker
 	// var marker1 = new VMarker(p1,"../resource/img/LocatingPoint.gif");
 	var marker2 = new VMarker(p2,"../resource/img/marker.png");
