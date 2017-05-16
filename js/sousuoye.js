@@ -107,7 +107,7 @@ function makeMap(sousuomap){
 	console.log(ypos);
 	var options={movex:sousuomap.movex,movey:sousuomap.movey,fontColor:"blue",publicColor:"green"};
 	var map = new Vmap(mapDiv,sousuomap.mallid,sousuomap.floorid, options);
-	setTimeout(function() {$('.dengdai').hide();}, 3000);
+	// setTimeout(function() {$('.dengdai').hide();}, 3000);
 	// var p1 = new VPoint(72.568,13.089,"Floor3");
 	// var p2 = new VPoint(46.485,23.098,"Floor3");
 	var p2 = new VPoint(xpos,ypos,floor);
@@ -125,6 +125,7 @@ function makeMap(sousuomap){
 	//加载到地图浮层
 	// map.addOverlay(marker1);
 	map.addOverlay(marker2);
+	$('.dengdai').hide();
 	// map.addOverlay(marker3);
 };
 	
