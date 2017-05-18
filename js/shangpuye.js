@@ -1,8 +1,9 @@
 var i=1;//控制点赞效果  i,j%2 -1是真正的效果图片索引  因为每次最后都进行了+1
 var j=1;//控制差评效果
+var k=1;//收藏效果
 $(document).ready(function(){
 	contact();
-	
+	makeShouCang();
 	// console.log(document.getElementsByTagName("*"));
 });
 function contact(){
@@ -149,4 +150,44 @@ function makePingJia(){
 		chaping_num.html('');
 		j++;
 	});
+}
+function makeShouCang(){
+	
+	// 点赞效果 点击后进行颜色数字切换
+	var shoucang=$('.shoucang-click  img');
+	// var dianzan_num=$('.pingjia .dianzan .num');
+	var img_shoucang=["../resource/fonts/shoucang/shoucang.png","../resource/fonts/shoucang/shoucanghong.png"];
+	
+	shoucang.click(function(){
+		this.src=img_shoucang[k%2];
+		// if(k%2==1)
+		// {
+			
+			
+		// 	// chaping.attr("src","../resource/fonts/pingjia/chaping.png");
+		// 	// chaping_num.html('');
+		// 	// j=1;
+		// 	dianzan_num.append('+1');
+		// }
+		
+		// else
+		// dianzan_num.html('');
+		k++;
+	});
+	// 差评效果 点击后进行颜色数字切换
+	
+	// chaping.click(function(){
+	// 	this.src=img_chaping[j%2];
+	// 	if(j%2==1)
+	// 	{
+			
+	// 		dianzan.attr('src','../resource/fonts/pingjia/dianzan.png');
+	// 		dianzan_num.html('');
+	// 		i=1;
+	// 		chaping_num.append('-1');
+	// 	}		
+	// 	else
+	// 	chaping_num.html('');
+	// 	j++;
+	// });
 }

@@ -1,3 +1,6 @@
+body{
+	padding-bottom: 58px;
+}
 .left-duiqi {
 	/* color: #000000; */
 	margin-left: 12%;
@@ -42,16 +45,42 @@
 .pingjia .body .chaping{
 	margin-left:5%;
 }
-.shoucang{
-	height: 80px;
+.shoucang {
+	margin-top: 0px;
+	position: fixed;
+	bottom: 0px;
+	height: 55px;
+	width: 100%;
+	border: 1px solid #E4E4E4;
+	border-bottom: none;
+	background-color: #FDFCFC;
 }
-a.button-tiaozhuan{
+.shoucang-click{
+	width: 30%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #E4E4E4;
+	/* margin-top: 5px; */
+
+	/* margin: 5px 0% 0px 0%; */
+}
+.shoucang-click img{
+	margin: 0 25% 0 35%;
+	/* width: 100%; */
+}
+.shoucang-click .shoucang-text{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+.button-tiaozhuan{
 	color: white;
-    border-radius: 8px;
+    border-radius: 0px;
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
     background-color: rgb(236, 108, 0);
-    width: 88%;
-    margin: 5px 6% 5px 6%;
+    height: 55px;
+    width: 69.5%;
+   /*  margin: 5px 0% 0px 40%; */
     padding: 3% ;
     font-size: 1.2rem;
 }
