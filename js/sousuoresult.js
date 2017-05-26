@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
 	contact();
 	
 });
@@ -28,7 +28,7 @@ function contact(){
 function makeResultMap(resultmap){
 	var strHtml='<div class="title-text">地图导览</div>'
 	+'<div class="dingwei"><span class="dingwei-text">您的位置: '
-	+'<img src="../resource/fonts/dingwei/dingweilogo.png"></span>'
+	+'<img src="./resource/fonts/dingwei/dingweilogo.png"></span>'
 	+'</div>'	
 	+'<div class="mapshow"><img src='+resultmap+'></div>'
 	var ditudaolan=$('.ditudaolan');

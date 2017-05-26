@@ -58,12 +58,12 @@
 .sheshi img{
 	margin: 3px 3%;
 }
-.ditudaolan{
+/*.ditudaolan{
 	position: relative;
 	width: 100%;
 	height: 45px;	
 	z-index: 20;
-}
+}*/
 
 .button-dingwei{
 	background-color: #00CCFF;
@@ -83,10 +83,10 @@
 	margin: 5px 12% 0;
 	overflow: hidden;
  } */
-.fenleisuoyin{
-	position: fixed;
-	bottom: 0px;
-}
+/*.fenleisuoyin{
+	position: relative;
+	clear:right;
+} */
 .fenlei-item-floor{
 	
 	font-size: 1.1rem;

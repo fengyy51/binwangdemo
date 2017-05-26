@@ -1,4 +1,4 @@
-$(document).ready(function(){
+﻿$(document).ready(function(){
 	
 	contact();
 	
@@ -6,7 +6,7 @@ $(document).ready(function(){
 function contact(){
 	$.ajax(
 	{		
-		url:"../json/return.json",
+		url:"./json/return.json",
 		type:"GET",
 		dataType:"json",
 		success:function(data){
@@ -44,7 +44,7 @@ function sousuoaction(){
 		window.localStorage.setItem("sousuotext",sousuoinput.val());
 		var value=sousuoinput.val();
 		if(value!="undefined"&&value!=null&&value!=""){
-			window.location.href="../page/sousuoresult.html";
+			window.location.href="./page/sousuoresult.html";
 			// var strHtml='';
 			// form.html(strHtml);
 			//  strHtml='<input type="text" id="sousuoinput" class="pure-input-rounded" placeholder="  商铺,商品,基础设施搜索">'
@@ -70,13 +70,13 @@ function sousuoaction(){
 function makeKuaiJieSouSuo(dataReceive){
 	var strHtml="";
 	for(var i=0;i<dataReceive.length;i++){
-		strHtml=strHtml+'<a href="../page/sousuoresult.html"name="a"><li class="item">'+dataReceive[i]+'</li></a>';
+		strHtml=strHtml+'<a href="./page/sousuoresult.html"name="a"><li class="item">'+dataReceive[i]+'</li></a>';
 	}
 	var Html='<div class="title-text ">快捷搜索</div><div class="item-list"><ul class="item-container",id="item-container">'+strHtml+'</ul></div></div>'
-	var Html=Html+'<div class="sheshi"><a href="../page/sousuoresult.html"name="a"><img src="../resource/fonts/sheshi/cesuo.png"></a>'
-	+'<a href="../page/sousuoresult.html"name="a"><img src="../resource/fonts/sheshi/churukou.png"></a>'
-	+'<a href="../page/sousuoresult.html"name="a"><img src="../resource/fonts/sheshi/dianti.png"></a>'
-	+'<a href="../page/sousuoresult.html"name="a"><img src="../resource/fonts/sheshi/miehuoqi.png"></a></div>'
+	var Html=Html+'<div class="sheshi"><a href="./page/sousuoresult.html"name="a"><img src="./resource/fonts/sheshi/cesuo.png"></a>'
+	+'<a href="./page/sousuoresult.html"name="a"><img src="./resource/fonts/sheshi/churukou.png"></a>'
+	+'<a href="./page/sousuoresult.html"name="a"><img src="./resource/fonts/sheshi/dianti.png"></a>'
+	+'<a href="./page/sousuoresult.html"name="a"><img src="./resource/fonts/sheshi/miehuoqi.png"></a></div>'
 	var $kuaijie=$('.kuaijiesousuo');
 	$kuaijie.html(Html);	
 }
@@ -84,7 +84,7 @@ function makeKuaiJieSouSuo(dataReceive){
 function makeSouSuoMap(sousuomap){
 	
 	+'<div class="dingwei"><span class="dingwei-text">您的位置: '
-	+'<img src="../resource/fonts/dingwei/dingweilogo.png"></span>'
+	+'<img src="./resource/fonts/dingwei/dingweilogo.png"></span>'
 	+ sousuomap[0]+'</div>'	
 	+'<div class="mapshow"><img src='+sousuomap[1]+'></div>'
 	var ditudaolan=$('.ditudaolan');
@@ -94,7 +94,7 @@ function makeMap(sousuomap){
 	var strHtml='<div class="title-text">地图导览'
 	// +'<button id="dingwei" class="pure-button button-dingwei">定位</button>'
 	+'<span class="dingwei" ><span class="dingwei-text" >您的位置: <span class="red">'
-	+sousuomap.floorid+'</span><img src="resource/fonts/dingwei/dingweilogo.png">'
+	+sousuomap.floorid+'</span><img src="./resource/fonts/dingwei/dingweilogo.png">'
 	+'</span></span></div>';
 	var ditudaolan=$('.ditudaolan');
 	ditudaolan.html(strHtml);	
@@ -118,7 +118,7 @@ function makeMap(sousuomap){
 	
 	//定义marker
 	// var marker1 = new VMarker(p1,"../resource/img/LocatingPoint.gif");
-	var marker2 = new VMarker(p2,"../resource/img/marker.png");
+	var marker2 = new VMarker(p2,"./resource/img/marker.png");
 	// var marker3 = new VMarker(p3,"../resource/img/tap.png");
 	// options={movex:46.485,movey:42.098,fontColor:"blue",publicColor:"green"};
 	// map = new Vmap(mapDiv,"E9F6A2DE-EADC-45AF-A42E-C7458A401339","Floor3", options);		
@@ -139,7 +139,7 @@ function makeFenLei(fenlei){
 		+fenlei[i].floor+'</span>';
 		strHtml=strHtml+'<span class="fenlei-item-text-list">';
 		for(var j=0;j<fenlei[i].item.length;j++){
-			strHtml=strHtml+'<a href="../page/sousuoresult.html"name="a"><span class="fenlei-item-text" name="fenlei-item-text">'
+			strHtml=strHtml+'<a href="./page/sousuoresult.html"name="a"><span class="fenlei-item-text" name="fenlei-item-text">'
 			+fenlei[i].item[j]+'</a></span>';
 		}
 		strHtml=strHtml+'</span></div>';

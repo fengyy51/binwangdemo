@@ -1,4 +1,4 @@
-var i=1;//控制点赞效果  i,j%2 -1是真正的效果图片索引  因为每次最后都进行了+1
+﻿var i=1;//控制点赞效果  i,j%2 -1是真正的效果图片索引  因为每次最后都进行了+1
 var j=1;//控制差评效果
 var k=1;//收藏效果
 $(document).ready(function(){
@@ -97,7 +97,7 @@ function makeMap(shangpumap){
 	//定义marker
 	// var marker1 = new VMarker(p1,"../resource/img/LocatingPoint.gif");
 	var marker2 = new VMarker(p2,"../resource/img/marker.png");
-	// var marker3 = new VMarker(p3,"../resource/img/tap.png");
+	// var marker3 = new VMarker(p3,"./resource/img/tap.png");
 	// options={movex:46.485,movey:42.098,fontColor:"blue",publicColor:"green"};
 	// map = new Vmap(mapDiv,"E9F6A2DE-EADC-45AF-A42E-C7458A401339","Floor3", options);		
 	//加载到地图浮层
@@ -116,7 +116,7 @@ function makePingJia(){
 	var img_dianzan=["../resource/fonts/pingjia/dianzan.png","../resource/fonts/pingjia/dianzanhong.png"];
 	var chaping=$('.pingjia .chaping img');
 	var chaping_num=$('.pingjia .chaping .num');
-	var img_chaping=["../resource/fonts/pingjia/chaping.png","../resource/fonts/pingjia/chapinghong.png"];
+	var img_chaping=["./resource/fonts/pingjia/chaping.png","../resource/fonts/pingjia/chapinghong.png"];
 	// chaping.attr("src","../resource/fonts/pingjia/chapinghong.png");
 	dianzan.click(function(){
 		this.src=img_dianzan[i%2];
@@ -155,23 +155,24 @@ function makeShouCang(){
 	
 	// 点赞效果 点击后进行颜色数字切换
 	var shoucang=$('.shoucang-click  img');
-	// var dianzan_num=$('.pingjia .dianzan .num');
+	var shoucang_text=$('.shoucang-text');
 	var img_shoucang=["../resource/fonts/shoucang/shoucang.png","../resource/fonts/shoucang/shoucanghong.png"];
 	
 	shoucang.click(function(){
 		this.src=img_shoucang[k%2];
-		// if(k%2==1)
-		// {
+		if(k%2==1)
+		{
 			
+			shoucang_text.html('已收藏');
 			
-		// 	// chaping.attr("src","../resource/fonts/pingjia/chaping.png");
+		// 	// chaping.attr("src","./resource/fonts/pingjia/chaping.png");
 		// 	// chaping_num.html('');
 		// 	// j=1;
 		// 	dianzan_num.append('+1');
-		// }
+		}
 		
-		// else
-		// dianzan_num.html('');
+		else
+		shoucang_text.html('收藏本页面');
 		k++;
 	});
 	// 差评效果 点击后进行颜色数字切换
@@ -181,7 +182,7 @@ function makeShouCang(){
 	// 	if(j%2==1)
 	// 	{
 			
-	// 		dianzan.attr('src','../resource/fonts/pingjia/dianzan.png');
+	// 		dianzan.attr('src','./resource/fonts/pingjia/dianzan.png');
 	// 		dianzan_num.html('');
 	// 		i=1;
 	// 		chaping_num.append('-1');
