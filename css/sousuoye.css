@@ -83,10 +83,18 @@
 	margin: 5px 12% 0;
 	overflow: hidden;
  } */
+
 /*.fenleisuoyin{
 	position: relative;
 	clear:right;
 } */
+
+.fenleisuoyin{
+	position: absolute;
+	top: 82%;
+	width: 100%;
+} 
+
 .fenlei-item-floor{
 	
 	font-size: 1.1rem;

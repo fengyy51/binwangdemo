@@ -1,4 +1,8 @@
-
+.sousuo-result{
+	position: absolute;
+	top: 47%;
+	width: 100%;
+}
 /* //成一列排列的格式 */
 div.item{
 	width: 100%;

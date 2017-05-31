@@ -4,8 +4,13 @@
         "sousuomap": {
             "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
             "floorid": "Floor3",
+
             "movex": 176.485,
             "movey": 228.098,
+
+            "movex": 156.485,
+            "movey": 188.098,
+
             "xpos": 146.485,
             "ypos": 158.098
         },
@@ -17,8 +22,13 @@
         "resultmap": {
             "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
             "floorid": "Floor3",
+
             "movex": 176.485,
             "movey": 228.098,
+
+            "movex": 156.485,
+            "movey": 188.098,
+
             "xpos": 146.485,
             "ypos": 158.098
         },
@@ -28,8 +38,13 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }
@@ -39,8 +54,13 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }
@@ -50,8 +70,13 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }
@@ -61,8 +86,13 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }
@@ -72,8 +102,13 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }
@@ -83,8 +118,13 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }
@@ -94,8 +134,13 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }
@@ -109,8 +154,12 @@
             "weizhi": {
                 "mallid": "4ac8388a-845e-442e-bc86-2063ffe7f912",
                 "floorid": "Floor3",
+
                 "movex": 176.485,
                 "movey": 228.098,
+                "movex": 156.485,
+                "movey": 188.098,
+
                 "xpos": 146.485,
                 "ypos": 158.098
             }

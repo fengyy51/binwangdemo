@@ -1,5 +1,6 @@
-body{
-	padding-bottom: 58px;
+html{
+	padding-bottom: 22%;
+	overflow-y: scroll;
 }
 .left-duiqi {
 	/* color: #000000; */
@@ -15,27 +16,43 @@ body{
 	width: 82%;
 }
 .lianxi .body{
-	margin-bottom: 2%;
+	margin-bottom: 1.5%;
+	font-size:0.9rem;
 }
 
 .lianxi .body .telephone{
 	color:#0099FF;
-	margin-left: 3.5%;
+	margin-left: 1.5%;
 }
 .lianxi .body .weixin{
 	color:#0099FF;
-	margin-left: 3.5%;
+	margin-left: 1.5%;
 }
 .lianxi .body img{
 	width: 25px;
 	height: 25px;
 	margin-right: 1%;
 }
+.mapcontainer{
+	//position:relative;
+	height:60%;
+	width:100%;
+	//height:280px;
+}
+.ditudaolan{
+	display:inline;
+}
+.ditudaolan .title-text{
+	display:inline;
+}
 .pingjia .body{
 	color:#0099FF;
 }
-.pingjia {
-	height: 80px;
+.pingjia {	
+	position: absolute;
+	top: 92%;
+	width: 100%;
+
 }
 .pingjia .body img{
 	width: 25px;
